@@ -2,6 +2,7 @@ import XCTest
 import NonStandardTests
 
 var tests: [XCTestCaseEntry] = []
-tests += NonStandardTests.allTests()
+tests += BidirectionalCollectionTests.allTests()
+tests += CollectionTests.allTests()
 tests += ExpirableTests.allTests()
 XCTMain(tests)
