@@ -15,8 +15,12 @@ let package = Package(
         .target(
             name: "NonStandard",
             dependencies: []),
+        .target(
+            name: "TestUtils",
+            dependencies: [],
+            path: "Tests/Utils"),
         .testTarget(
             name: "NonStandardTests",
-            dependencies: ["NonStandard"]),
+            dependencies: ["NonStandard", "TestUtils"]),
     ]
 )
